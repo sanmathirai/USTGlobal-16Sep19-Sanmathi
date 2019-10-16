@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+</head>
+<body>
+<script>
+     
+var dog = {
+    breed : 'Husky',
+    name : 'Rabir',
+    color : 'white',
+    age : 2,
+    getFullName : function(){
+        return this.breed+' \n'+this.name+'\n'+this.color+'\n'+this.age;
+    }  
+} 
+    var fullName = dog.getFullName();
+    console.log('Details of dog\n ', fullName) 
+
+var phone = {
+    brand : 'Moto',
+    price : 10000,
+    color : 'white',
+    ram : 32,
+    getFullName : function(){
+        return this.brand + ' \n'+this.price + '\n' + this.color + '\n' + this.ram;
+    }
+     
+} 
+    var fullName = phone.getFullName();
+    console.log('Details of phone \n', fullName) 
+
+    var college = {
+    name : 'SJEC',
+    place : 'Bangalore',
+    isNBA_accreditated : true,
+   
+    getFullName : function(){
+        return this.name + ' \n'+this.place + '\n' + this.isNBA_accreditated + '\n';
+    }
+     
+} 
+    var fullName=college.getFullName();
+    console.log('Details of college \n',fullName);
+
+    var laptop = {
+    brand : 'Hp',
+    ram : 8,
+    price : 40000,
+    proccessor : 'i3',
+   
+    getFullName: function() {
+        return this.brand + ' \n' + this.ram + '\n' + this.price + '\n' + this.proccessor;
+    }
+     
+} 
+    var fullName = laptop.getFullName();
+    console.log('Details of Laptop \n', fullName);
+
+    var book = {
+    title : 'JS',
+    auther : 'xyz',
+    cost : 400,
+    edition : 4,
+   
+    getFullName : function(){
+        return 'title :'+ this.title +' \n' + this.auther + '\n' + this.cost + '\n' + this.edition;
+    }
+     
+} 
+    var fullName = book.getFullName();
+    console.log('Details of BOOK \n', fullName);
+</script>
+</body>
+</html>
