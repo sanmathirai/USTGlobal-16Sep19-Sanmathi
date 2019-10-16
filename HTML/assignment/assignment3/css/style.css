@@ -1,0 +1,308 @@
+.topnav{
+    background: #111;
+    text-align: center;
+}
+.topnav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+.topnav ul li a {
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 30px; 
+    text-decoration: none;
+    color: #fff;
+}
+.banner img
+{
+float: left;
+}
+.banner{
+    padding-top: 6em;
+    box-shadow: 0px 2px 3px 4px rgb(231, 230, 230);
+    height: 600px;
+}
+ .profile{
+    border-radius: 99%;
+    width: 450px;
+    margin-left:50px; 
+}
+.banner h1 {
+    float: left;
+    font-size: 3.5em;
+    margin-top: 120px;
+    margin-left: 30px;
+   
+}
+.banner p{
+    float: left;
+    margin-left: 30px;
+    
+   
+} 
+.banner  a {
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 25px 50px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid #111; 
+    background: #43B3E0;
+}
+ .banner2{
+    padding-top: 6em;
+    box-shadow: 0px 2px 3px 4px rgb(231, 230, 230);
+    height: 800px;
+ }
+ .banner2 .fab{
+    color: pink;
+    font-size: 80px;   
+ }
+.banner2 .fa{
+    color: pink;
+    font-size: 80px;      
+}
+.banner2 .colm{
+    text-align: center;
+    float: left;
+    /* width: 340px; */
+    margin: 50px 20px;
+    height: 350px;
+    padding: 40px 20px;
+    box-shadow: 2px 2px 2px 2px rgb(211, 208, 208);
+}
+ 
+.banner2 header h1 {
+    font-size: 2em;
+    letter-spacing: -0.015em;
+    color: #3e3e3e;
+    font-weight: 700;
+}
+.banner2 header p {
+    font-size: 1.25em;
+    color: #888;
+    letter-spacing: 2px;
+    display: block;
+  
+}
+.banner2 .footer{
+    text-align: center;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    color: #888;
+}
+.banner2 a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 25px 50px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid #111; 
+    background: #43B3E0;
+}
+.banner3{
+     
+    box-shadow: 0px 2px 3px 4px rgb(231, 230, 230);
+    height: 1400px;
+ }
+
+.banner3 .colm{
+    float: left;
+    width: 350px;
+    margin: 50px;
+    height: 450px; 
+    box-shadow: 2px 2px 2px 2px rgb(211, 208, 208);
+}
+ 
+.banner3 header h1 {
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: -0.015em;
+    color: #3e3e3e;
+    font-weight: 700;
+    padding-top:10px;
+}
+.banner3 header p {
+    text-align: center;
+    font-size: 1.25em;
+    color: #888;
+    letter-spacing: 2px;
+    display: block;
+  
+}
+.banner3 .footer{
+    text-align: center;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    color: #888;
+}
+.banner3 a{
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 25px 50px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid #111; 
+    background: #43B3E0;
+   margin-bottom: 20px;
+}
+.banner3 img{
+
+    width: 100%;
+}
+
+.footersection
+{
+    /* text-align: center; */
+    background: black;
+    height: 1200px;
+    color: white;
+}
+.footersection h1{
+    text-align: center;
+    padding-top:100px;
+    margin: 20px 0px 0px 0px;
+    
+}
+.footersection p{
+    text-align: center;
+    font-size: 1.25em;
+    color: #888;
+    letter-spacing: 2px;
+    padding-top: 1em;
+}
+ 
+.footersection div input {
+   width:92%;
+   padding: 2px;
+}
+.footersection div .name input {
+    width:45%;
+    float: left;
+
+     
+ }
+ .form1 .name input {
+    margin-right: 21px;
+    padding-left: 5px;
+}
+ .footersection div .email input {
+    width:45%;
+    float: left;
+     
+ }
+ 
+.form1{
+    width: 70%;
+    margin: 30px 15%;
+}
+.footersection div input {
+    border: none;
+    background: #282828;
+    padding: 0.75em;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: text;
+    margin-top: 25px;
+}
+.name input{
+   
+    padding: 2px;
+ padding: 2px;
+}
+.footersection div input {
+    border: none;
+    background: #282828;
+    padding: 0.75em;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: text;
+    margin-top: 25px;
+}
+.subject, .message{
+    width: 100%;
+}
+.subject input{
+    width: 100%;
+    height: 40px;
+}
+.message input{
+    width: 100%;
+    height: 15em;
+    padding: 0;
+}
+.footer
+{
+    text-align: center;
+}
+.footer ul li {
+    display: inline-block;
+    
+ 
+}
+.footer .sub {
+    
+    background: #43B3E0;
+    color:white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.footer .alt {
+    
+    background: #282828;
+    color:white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.social
+{
+    text-align: center;
+}
+.footersection .social ul li a .fa {
+   
+  padding: 10px;
+    width: 57px;
+    height: 57px;
+    background: #282828;
+    color: black;
+    margin-left: 5px;
+    font-size: 32px;
+}
+.footersection .fab{
+    padding: 10px;
+    width: 57px;
+    height: 57px;
+    background: #282828;
+    color: black;
+    margin-left: 5px;
+    font-size: 32px;  
+}
+
+.end {
+    padding-top: 30px;
+    color: #282828;
+    text-align: center;
+}
+.footersection ul li {
+    display: inline-block;
+}
+.footersection ul{
+    margin-top: 20px;
+}

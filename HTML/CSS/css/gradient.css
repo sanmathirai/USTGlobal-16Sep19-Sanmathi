@@ -1,0 +1,9 @@
+#id1{
+    height: 500px;
+    background:linear-gradient(to right, rgb(12, 12, 12), rgb(236, 228, 228), rgb(40, 40, 197), rgb(182, 209, 226))
+}
+#id2{
+    p
+    height: 500px;
+    background:radial-gradient( red, black, blue, green)
+}
