@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+ <center>
+<fieldset style="width:50%">
+	<form action="./login" method="post">
+		<center>
+			<h1>Login</h1>
+		</center>
+		<table align="center" border="1">
+
+
+			<tr>
+				<td>Enter ID</td>
+				<td><input name="id" type="number"></td>
+			</tr>
+			<tr>
+				<td>Enter Password</td>
+				<td><input name="password" type="text"></td>
+			</tr>
+			<tr ><td></td>
+				<td ><input type="checkbox" name="rememberme">Remember me</td>
+			</tr>
+			<tr>
+				
+				<td style="float:right"><input type="submit"></td>
+				<td><input type="reset"></td>
+			</tr>
+			<tr><td align="center" colspan="2"><a href="register.html" style="color:blue;">Click here to register</a></td></tr>
+
+		</table>
+
+
+	</form>
+</fieldset>
+</center>
+</body>
+</html>

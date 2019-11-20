@@ -1,0 +1,50 @@
+package com.ustglobal.empwebapp.servlets;
+
+import java.io.PrintWriter;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletResponse;
+
+public class LoginPageServlet extends HttpServlet{
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		PrintWriter out = resp.getWriter();
+		out.println("<center>\r\n" + 
+				"<fieldset style='width:50%'>\r\n" + 
+				"	<form action='./login' method='post'>\r\n" + 
+				"		<center>\r\n" + 
+				"			<h1>Login</h1>\r\n" + 
+				"		</center>\r\n" + 
+				"		<table align='center' cellpadding='15' >\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"			<tr>\r\n" + 
+				"				<td>Enter ID</td>\r\n" + 
+				"				<td><input name='id' type='number' required></td>\r\n" + 
+				"			</tr>\r\n" + 
+				"			<tr>\r\n" + 
+				"				<td>Enter Password</td>\r\n" + 
+				"				<td><input name='password' type='text' required></td>\r\n" + 
+				"			</tr>\r\n" + 
+				"			<tr >\r\n" + 
+				"				<td align='center' colspan='2'><input type='checkbox' name='rememberme' value='check'>Remember me</td>\r\n" + 
+				"			</tr>\r\n" + 
+				"			<tr>\r\n" + 
+				"				\r\n" + 
+				"				<td style='float:right'>\r\n" + 
+				"				<input type='submit' style='background-color:green;color:white;width:90px;height:30px;'>\r\n" + 
+				"				</td>\r\n" + 
+				"				<td><input type='reset' style='background-color:green;color:white;width:90px;height:30px;'></td>\r\n" + 
+				"			</tr>\r\n" + 
+				"			<tr><td colspan='2' align='center'><a href='register.html' style='color:blue;'> Click  here to register</a></td></tr>\r\n" + 
+				"\r\n" + 
+				"		</table>\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"	</form>\r\n" + 
+				"</fieldset>\r\n" + 
+				"</center>");
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.ustglobal.empwebapp.dto;
+
+public class EmployeeInfo {
+private int id;
+private int name;
+private int email;
+private int password;
+}

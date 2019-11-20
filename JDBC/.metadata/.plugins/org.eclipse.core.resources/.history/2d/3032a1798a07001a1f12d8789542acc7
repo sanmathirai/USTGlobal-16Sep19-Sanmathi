@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<a href="home.html">HOME</a>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<a href="login.html">LOGOUT</a>
+	
+<fieldset style="width:50%;align:center">
+	<form action="">
+		<center>
+			<h1>Search</h1>
+		</center>
+		<table align="center">
+
+
+			<tr>
+				<td>Search BY ID</td>
+				<td><input name="id" type="number"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2" align="right">
+				<input type="submit" value="search"></td>
+			</tr>
+
+		</table>
+
+
+	</form>
+	
+	</fieldset>
+</body>
+</html>

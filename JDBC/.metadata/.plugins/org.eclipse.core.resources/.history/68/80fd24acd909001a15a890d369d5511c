@@ -1,0 +1,5 @@
+
+public class EMployee {
+int id;
+String name;
+}

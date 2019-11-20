@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="homehtml">HOME</a>
+	<a href="logout.html">LOGOUT</a>
+
+	<form action="">
+		<center>
+			<h1>Change password</h1>
+		</center>
+		<table align="center">
+
+
+			<tr>
+				<td>New password</td>
+				<td><input name="npassword" type="password"></td>
+			</tr>
+			<tr>
+				<td>Confirm password</td>
+				<td><input name="cpassword" type="password"></td>
+			</tr>
+
+			<tr>
+				<td ><input type="submit"
+					value="Change"></td>
+			</tr>
+
+		</table>
+
+
+	</form>
+</body>
+</html>

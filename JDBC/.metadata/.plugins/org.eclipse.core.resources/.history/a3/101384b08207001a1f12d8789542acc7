@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="homehtml">HOME</a>
+	<a href="logout.html">LOGOUT</a>
+
+	<form action="">
+		<center>
+			<h1>Change password</h1>
+		</center>
+		<table align="center">
+
+
+			<tr>
+				<td>New password</td>
+				<td><input name="id" type="text"></td>
+			</tr>
+
+			<tr>
+				<td colspan="2" align="right"><input type="submit"
+					value="search"></td>
+			</tr>
+
+		</table>
+
+
+	</form>
+</body>
+</html>

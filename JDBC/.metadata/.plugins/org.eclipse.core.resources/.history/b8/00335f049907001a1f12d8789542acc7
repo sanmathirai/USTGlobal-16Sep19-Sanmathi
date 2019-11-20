@@ -1,0 +1,44 @@
+package com.ustglobal.empwebapp.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.ustglobal.empwebapp.dto.EmployeeInfo;
+import com.ustglobal.empwebapp.util.EmployeeDAOManger;
+
+@WebServlet("/home")
+public class HomeServlet extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		HttpSession session = req.getSession(false);//check weather session obj is present or not
+		if(session != null ) {
+			EmployeeInfo info = (EmployeeInfo)session.getAttribute("info");//since it retuns object type
+			PrintWriter out = resp.getWriter();
+			out.println("<html>");
+			out.println("<h1>WELCOME TO HOME PAGE</h1>");
+			out.println(info.getName());
+			out.println("<a href='./search.html'>SEARCH</a>");
+			out.println("<a href='./changepassword.html'>Change Password</a>");
+			out.println("<a href='#'>LOGOUT</a>");
+			out.println("</html>");
+		}else {
+			RequestDispatcher displatcher = req.getRequestDispatcher("/login.html");
+		}
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		doGet(req, resp);
+	}
+
+
+}

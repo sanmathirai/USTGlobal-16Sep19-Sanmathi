@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="">
+		<center>
+			<h1>Register Here</h1>
+		</center>
+		<table align="center">
+
+
+			<tr>
+				<td>Enter ID</td>
+				<td><input name="id" type="number"></td>
+			</tr>
+			<tr>
+				<td>Enter name</td>
+				<td><input name="name" type="text"></td>
+			</tr>
+
+			<tr>
+				<td>Enter Email</td>
+				<td><input name="email" type="email"></td>
+			</tr>
+
+			<tr>
+				<td>Enter Password</td>
+				<td><input name="password" type="text"></td>
+			</tr>
+			<tr>
+				<td><input type="submit"></td>
+			</tr>
+
+		</table>
+
+
+	</form>
+</body>
+</html>

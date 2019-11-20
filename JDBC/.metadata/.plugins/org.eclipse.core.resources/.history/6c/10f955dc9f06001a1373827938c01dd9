@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="./formForward" method="post">
+	<table>
+	
+		<tr>
+		<td>Name: <input name="empname" type="text"></td>
+		</tr>
+		<tr>
+		Email: <input name="email" type="email"><br></tr>
+		Password: <input name="password" type="password">
+		<input type="submit">
+	</table>
+	</form>
+</body>
+</html>

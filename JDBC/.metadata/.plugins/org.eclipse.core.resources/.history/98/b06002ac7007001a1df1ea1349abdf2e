@@ -1,0 +1,7 @@
+package com.ustglobal.empwebapp.util;
+
+public class EmployeeDAOManger {
+private EmployeeDAOManger() {
+	
+}
+}
