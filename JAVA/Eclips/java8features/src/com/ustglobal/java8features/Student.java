@@ -1,0 +1,18 @@
+package com.ustglobal.java8features;
+
+public class Student {
+
+	int is;
+	String name;
+	double percentage;
+	public Integer id;
+	
+	public Student(int is, String name, double percentage) {
+		super();
+		this.is = is;
+		this.name = name;
+		this.percentage = percentage;
+	}
+	
+	
+}

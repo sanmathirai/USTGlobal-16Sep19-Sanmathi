@@ -1,0 +1,15 @@
+package com.ustglobal.map;
+
+import java.util.HashMap;
+
+public class TestB {
+public static void main(String[] args) {
+	HashMap hm = new HashMap();
+	
+	
+	hm.put("Kuku", 456545);
+	hm.put("Mala", 4545);
+	hm.put("sheela", 556545);
+	hm.put("Meena", 656545);
+}
+}

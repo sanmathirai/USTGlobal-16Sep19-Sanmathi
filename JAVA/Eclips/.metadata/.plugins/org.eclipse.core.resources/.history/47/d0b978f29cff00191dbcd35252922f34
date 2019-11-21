@@ -1,0 +1,12 @@
+package com.ustglobal.map;
+
+public class TestF {
+	public static void main(String[] args) {
+		
+		Student s1 = new Student(1	, "Megha", 45.5);
+		Student s1 = new Student(2	, "Megha", 45.5);
+		Student s1 = new Student(3	, "Megha", 45.5);
+		Student s1 = new Student(4	, "Megha", 45.5);
+		
+	}
+}

@@ -1,0 +1,9 @@
+package com.ustglobal.java8features.predicates;
+
+public class Vote {
+	int id;
+	String name;
+	double salary;
+	
+	
+}

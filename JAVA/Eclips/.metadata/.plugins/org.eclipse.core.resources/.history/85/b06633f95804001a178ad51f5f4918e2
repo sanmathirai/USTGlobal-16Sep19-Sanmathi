@@ -1,0 +1,9 @@
+package com.ustglobal.thread.pausing;
+
+public class Mythread extends Thread{
+@Override
+public void run() {
+	// TODO Auto-generated method stub
+	super.run();
+}
+}

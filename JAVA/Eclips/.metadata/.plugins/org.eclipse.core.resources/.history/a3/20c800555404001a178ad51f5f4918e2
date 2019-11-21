@@ -1,0 +1,7 @@
+package com.ustglobal.thread.properties;
+
+public class MyPriorityThread {
+public static void main(String[] args) {
+	
+}
+}

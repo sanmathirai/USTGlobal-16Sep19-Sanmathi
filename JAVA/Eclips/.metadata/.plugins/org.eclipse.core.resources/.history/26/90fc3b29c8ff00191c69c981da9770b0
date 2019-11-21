@@ -1,0 +1,45 @@
+package com.ustglobal.java8features;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Helper {
+void displayAllStudents(ArrayList<Student> al) {
+	Iterator<Student> it = al.iterator();
+	while(it.hasNext()) {
+		Student val = it.next();
+		System.out.println("Id is :"+val.is);
+		System.out.println("Name is :"+val.name);
+		System.out.println("Percentage is :"+val.percentage+"\n");
+		
+	}
+}
+	void displayFailedStudents(ArrayList<Student> al) {
+		List<Student> l = al.stream().filter(student -> student.percentage<40).collect(Collectors.toList());
+		Iterator<Student> it = l.iterator();
+		System.out.println("Fail");
+		while(it.hasNext()) {
+			
+			Student val = it.next();
+			System.out.println("Id is :"+val.is);
+			System.out.println("Name is :"+val.name);
+			System.out.println("Percentage is :"+val.percentage);
+		}	
+	}
+	
+
+	void displayPassesStudents(ArrayList<Student> al) {
+		System.out.println("Pass\n");
+		List<Student> l = al.stream().filter(student -> student.percentage>=40).collect(Collectors.toList());
+		Iterator<Student> it = l.iterator();
+		while(it.hasNext()) {
+			Student val = it.next();
+			System.out.println("Id is :"+val.is);
+			System.out.println("Name is :"+val.name);
+			System.out.println("Percentage is :"+val.percentage);
+		}	
+	}
+
+}

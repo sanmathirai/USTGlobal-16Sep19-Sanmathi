@@ -1,0 +1,15 @@
+package com.ustglobal.thread.pausing;
+
+
+public class Counter {
+	
+	int v;
+	
+	public void increment() {
+		v++;
+	}
+	
+	public void decrement() {
+		v--;
+	}
+}

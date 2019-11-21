@@ -1,0 +1,21 @@
+package com.ustglobal.jdbcapp;
+
+import java.sql.*;
+
+import com.mysql.jdbc.Driver;
+
+public class MyFirstJDBC {
+	public static void main(String[] args) {
+
+		Connection conn = null;
+		Statement stmt = null;
+		ResultSet rs  = null;
+		try {
+			Driver driver = new Driver();
+		}catch(SQLException e)
+		{
+			e.printStackTrace();
+		}
+		
+	}//end of main
+}//end of MyFirstJdbc

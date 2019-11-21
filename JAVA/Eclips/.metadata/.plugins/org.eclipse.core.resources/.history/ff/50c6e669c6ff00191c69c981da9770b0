@@ -1,0 +1,13 @@
+package com.ustglobal.java8features;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Helper {
+void displayAllStudents(ArrayList<Student> al) {
+	Iterator<Student> it = al.iterator();
+	while(it.hasNext()) {
+		Student val = it.next()
+	}
+}
+}

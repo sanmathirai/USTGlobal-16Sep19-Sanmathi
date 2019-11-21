@@ -1,0 +1,8 @@
+package com.ustgloabl.sorting.set;
+
+public class Employee1 {
+	int id;
+	String name;
+	double height;
+
+}

@@ -1,0 +1,9 @@
+package com.ustglobal.java8features.predicates;
+
+public class Employee {
+	int id;
+	String name;
+	double salary;
+	
+	
+}

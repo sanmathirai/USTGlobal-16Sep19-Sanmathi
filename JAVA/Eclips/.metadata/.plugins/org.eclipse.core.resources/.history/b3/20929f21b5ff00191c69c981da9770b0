@@ -1,0 +1,11 @@
+package com.ustglobal.java8features.function;
+
+import java.util.function.Function;
+
+public class TestA {
+	public static void main(String[] args) {
+		Function<Integer, Integer> f = i-> i * i;
+		Integer result = f.apply(2);
+		System.out.println(result);
+	}
+}

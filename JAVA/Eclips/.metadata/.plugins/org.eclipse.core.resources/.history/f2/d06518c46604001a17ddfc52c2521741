@@ -1,0 +1,10 @@
+package com.ustglobal.thread.pausing;
+
+public class MyJoinThread extends Thread{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
+
+}

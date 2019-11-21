@@ -1,0 +1,9 @@
+package com.ustglobal.java8features.supplier;
+
+import java.util.function.Supplier;
+
+public class TestA {
+public static void main(String[] args) {
+	Supplier<Student> s = ()->new Student(2,"sanmathi",65.5)
+}
+}

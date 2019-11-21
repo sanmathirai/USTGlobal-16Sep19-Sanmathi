@@ -1,0 +1,6 @@
+package com.ustglobal.thread.pausing;
+
+public class TestA {
+
+Object obj1 = new Object()
+}

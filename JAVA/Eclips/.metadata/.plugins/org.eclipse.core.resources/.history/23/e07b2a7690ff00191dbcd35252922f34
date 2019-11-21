@@ -1,0 +1,10 @@
+package com.ustglobal.map;
+
+import java.util.HashMap;
+
+public class TestA {
+public static void main(String[] args) {
+	HashMap hm = new HashMap();
+	
+}
+}

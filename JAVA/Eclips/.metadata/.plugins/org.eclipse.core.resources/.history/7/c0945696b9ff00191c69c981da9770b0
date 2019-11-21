@@ -1,0 +1,8 @@
+package com.ustglobal.java8features.consumer;
+
+public class TestA {
+	public static void main(String[] args) {
+
+			
+	}
+}

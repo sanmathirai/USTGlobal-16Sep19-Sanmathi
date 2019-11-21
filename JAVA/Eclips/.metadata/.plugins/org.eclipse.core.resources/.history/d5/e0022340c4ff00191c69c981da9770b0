@@ -1,0 +1,9 @@
+package com.ustglobal.streams.list;
+
+import java.util.ArrayList;
+
+public class TestG {
+	public static void main(String[] args) {
+		ArrayList<Employee> al= new ArrayList<Employee> 
+	}
+}

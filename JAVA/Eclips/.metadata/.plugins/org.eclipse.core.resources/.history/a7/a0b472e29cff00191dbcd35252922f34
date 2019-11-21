@@ -1,0 +1,7 @@
+package com.ustglobal.map;
+
+public class TestF {
+	public static void main(String[] args) {
+		Student s1 = new Student(1	, "Megha", 45.5);
+	}
+}

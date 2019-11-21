@@ -1,0 +1,11 @@
+package com.ustglobal.streams.list;
+
+import java.util.ArrayList;
+
+public class TestG {
+	public static void main(String[] args) {
+		ArrayList<Employee> el= new ArrayList<Employee> ();
+		Employee e1 = new Employee(1, "Sanmthi")
+		
+	}
+}

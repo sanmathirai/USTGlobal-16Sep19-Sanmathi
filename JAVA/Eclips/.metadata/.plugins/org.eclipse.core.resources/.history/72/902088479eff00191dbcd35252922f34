@@ -1,0 +1,40 @@
+package com.ustglobal.map;
+
+import java.util.ArrayList;
+
+public class TestF {
+	public static void main(String[] args) {
+
+		Student s1 = new Student(21	, "Megha", 45.5);
+		Student s2 = new Student(12	, "Sanmathi", 45.5);
+		Student s3 = new Student(33	, "Navya", 45.5);
+		Student s4 = new Student(14	, "Veekshitha", 95.5);
+		Student s5 = new Student(59	, "Madhura", 45.5);
+		Student s6 = new Student(6	, "Rashmi", 45.5);
+		Student s7 = new Student(57	, "Rashmi", 45.5);
+		Student s8 = new Student(8	, "Shyamala", 45.5);
+		Student s9 = new Student(19	, "Ramya", 45.5);
+
+		ArrayList<Student> al = new ArrayList<Student>();
+		al.add(s1);
+		al.add(s2);
+		al.add(s3);
+
+		ArrayList<Student> al1 = new ArrayList<Student>();
+		al1.add(s4);
+		al1.add(s5);
+		al1.add(s6);
+
+		ArrayList<Student> al2 = new ArrayList<Student>();
+		al2.add(s7);
+		al2.add(s8);
+		al2.add(s9);
+
+
+
+
+
+
+
+	}
+}
