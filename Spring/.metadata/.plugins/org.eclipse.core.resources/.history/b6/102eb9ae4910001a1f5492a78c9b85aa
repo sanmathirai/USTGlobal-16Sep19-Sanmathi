@@ -1,0 +1,7 @@
+package com.ustglobal.springcore.di;
+
+public class Book {
+	private String auther;
+private int price;
+
+}

@@ -1,0 +1,10 @@
+package com.ustglobal.springcore.di;
+
+import java.util.jar.Attributes.Name;
+
+public class Book {
+	private String auther;
+	private String name;
+private int price;
+
+}

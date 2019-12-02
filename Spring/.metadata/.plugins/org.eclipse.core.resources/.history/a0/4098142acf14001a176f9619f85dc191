@@ -1,0 +1,64 @@
+<%@page import="com.ustglobal.springmvcassessment.dto.ProductBean"%>
+<%@page import="com.ustglobal.springmvcassessment.dto.RetailerBean"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%
+	RetailerBean bean = (RetailerBean) session.getAttribute("bean");
+	ProductBean productBean = (ProductBean) session.getAttribute("bean");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<fieldset>
+
+		<a href="./changepassword">change password</a> <a href="./update">Update
+			profile</a> <a href="./delete">Delete profile</a> <a href="./logout">logout</a>
+		<h3>${msg}</h3>
+		<center>
+			<h2>
+				Welcome :
+				<%=bean.getName()%></h2>
+			<h2>Search Products</h2>
+			<form action="./search">
+				<table>
+					<tr>
+						<td><input type="number" name="id"></td>
+						<td><input type="submit" value="search"></td>
+					</tr>
+				</table>
+			</form>
+		</center>
+	</fieldset>
+	<%ProductBean retailerBean = (ProductBean)request.getAttribute("bean");
+	
+	%>
+	<%if( retailerBean!= null ){%>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>gender</th>
+			<th>DOJ</th>
+		</tr>
+		<tr>
+			<td><%= retailerBean.getName() %></td>
+			<td><%= retailerBean.getEmail() %></td>
+
+			<td></td>
+
+
+		</tr>
+	</table>
+
+	<% }  %>
+
+
+
+
+</body>
+</html>

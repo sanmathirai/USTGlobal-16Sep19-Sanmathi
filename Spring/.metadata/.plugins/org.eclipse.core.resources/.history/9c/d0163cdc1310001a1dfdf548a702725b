@@ -1,0 +1,6 @@
+package com.ustglobal.springcore.di;
+
+public class Hello {
+private String msg;
+
+}

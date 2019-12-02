@@ -1,0 +1,8 @@
+package com.ustglobal.springcore;
+
+public class AnnotationApp {
+private void mian() {
+	
+
+}
+}

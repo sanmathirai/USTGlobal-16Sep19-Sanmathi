@@ -1,0 +1,11 @@
+package com.ustglobal.springmvcassessment.dto;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+
+@Data
+@Entitytity
+public class ProductBean {
+
+}

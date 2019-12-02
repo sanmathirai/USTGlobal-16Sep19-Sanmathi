@@ -1,0 +1,7 @@
+package com.ustglobal.didemo.util;
+
+public class Manager {
+public I getI() {
+	return new  A();
+}
+}

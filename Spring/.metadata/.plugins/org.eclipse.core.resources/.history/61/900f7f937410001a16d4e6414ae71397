@@ -1,0 +1,12 @@
+package com.ustglobal.springcore.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.ustglobal.springcore.di.Book;
+
+@Configuration
+public class ConfigurationBook {
+public Book getBook() {
+	return new Book();
+}
+}

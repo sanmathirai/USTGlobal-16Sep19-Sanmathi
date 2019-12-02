@@ -1,0 +1,11 @@
+package com.ustglobal.springcore;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class AnnotationApp {
+private void mian() {
+	ApplicationContext context = new AnnotationConfigApplicationContext();
+
+}
+}

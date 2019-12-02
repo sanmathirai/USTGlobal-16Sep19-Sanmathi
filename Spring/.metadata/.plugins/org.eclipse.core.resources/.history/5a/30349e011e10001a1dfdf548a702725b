@@ -1,0 +1,6 @@
+package com.ustglobal.springcore.di;
+
+public class Pet {
+	private String name;
+	private Animal animal;
+}

@@ -1,0 +1,16 @@
+package com.ustglobal.springmvcassessment.dto;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "product")
+public class ProductBean {
+	@Id
+
+
+}

@@ -1,0 +1,7 @@
+package com.ustglobal.springcore.di;
+
+public class Auther {
+private String name;
+private String penName;
+
+}

@@ -1,0 +1,6 @@
+package com.ustglobal.empspringmvc.dao;
+
+public interface EmployeeDAO {
+	public EmployeeBean login(int id,String password);
+	public EmployeeBean register(int id,String password);
+}

@@ -1,0 +1,12 @@
+package com.ustglobal.springmvcassessment.dao;
+
+import com.ustglobal.springmvcassessment.dto.RetailerBean;
+
+public interface RetailerDAO {
+	public RetailerBean login(int id,String password);
+	public int register(RetailerBean bean);
+	public boolean deleteRetailer(int id);
+	public RetailerBean searchRetailer(int id);
+
+	public boolean changePassword(int id,String password);
+}
