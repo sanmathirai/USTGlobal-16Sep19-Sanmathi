@@ -12,6 +12,7 @@
 			<form action="./register" method="post">
 				<h1>Register page</h1>
 				<table>
+				
 					<tr>
 						<td>Name</td>
 						<td><input type="text" name="name"></td>

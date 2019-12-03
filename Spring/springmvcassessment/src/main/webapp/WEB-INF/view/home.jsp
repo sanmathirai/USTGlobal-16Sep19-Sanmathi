@@ -1,10 +1,10 @@
+<%@page import="com.ustglobal.springmvcassessment.dto.OrderBean"%>
 <%@page import="com.ustglobal.springmvcassessment.dto.ProductBean"%>
 <%@page import="com.ustglobal.springmvcassessment.dto.RetailerBean"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%
 	RetailerBean bean = (RetailerBean) session.getAttribute("bean");
-	
 %>
 <!DOCTYPE html>
 <html>
@@ -17,51 +17,66 @@
 	<fieldset>
 
 		<a href="./changepassword">change password</a> <a href="./update">Update
-			profile</a> <a href="./delete">Delete profile</a> <a href="./logout">logout</a>
+			profile</a> <a href="./delete">Delete profile</a> <a href="./logout">logout</a><a
+			href="./vieworder">view </a>
 		<h3>${msg}</h3>
-		<center>
-			<h2>
-				Welcome :
-				<%=bean.getName()%></h2>
-			<h2>Search Products</h2>
-			<form action="./search">
-				<table>
-					<tr>
-						<td><input type="number" name="id"></td>
-						<td><input type="submit" value="search"></td>
-					</tr>
-				</table>
-			</form>
+
+		<h2>
+			Welcome :
+			<%=bean.getName()%></h2>
+		<h2>Search Products</h2>
+		<form action="./search">
+			<table>
+				<tr>
+					<td><input type="number" name="id"></td>
+					<td><input type="submit" value="search"></td>
+
+				</tr>
+			</table>
+		</form>
+
+		<%
+			ProductBean productBean = (ProductBean) request.getAttribute("bean");
+				
+		%>
+		<%
+				if (productBean != null) {
+			%>
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>price</th>
+
+			</tr>
+			<tr>
+				<td><%=productBean.getPname()%></td>
+				<td><%=productBean.getPrice()%></td>
+				<td><%=productBean.getPid()%></td>
+
+				<td></td>
+
+
+			</tr>
+		</table>
+		<%
+				ProductBean pbean = (ProductBean) session.getAttribute("pbean");
+				
+			%>
+		<h1>Enter Quantity</h1>
+		<form action="./placeorder" method="post">
+			<input type="number" name="quantity"> <input type="submit"
+				value="order"> <input type="hidden"
+				value="<%=productBean.getPrice()%>" name="price">
+
+
+		</form>
+
+		<%
+				}
+			%>
+
 		</center>
 	</fieldset>
-	<%ProductBean productBean = (ProductBean)request.getAttribute("bean");
-
-	%>
-	<%if( productBean!= null ){%>
-	<table>
-		<tr>
-			<th>Product</th>
-			<th>price</th>
-
-		</tr>
-		<tr>
-			<td><%= productBean.getPname() %></td>
-			<td><%= productBean.getPrice() %></td>
-
-			<td></td>
-
-
-		</tr>
-	</table>
-	<h1>Enter Quantity</h1>
-	<form  action = "./oder" method="post">
-	<input type="number" name="quantity">
-	<input type="submit" value="order">
-	</form>
-	
-	<% }  %>
-
-
 
 </body>
 </html>

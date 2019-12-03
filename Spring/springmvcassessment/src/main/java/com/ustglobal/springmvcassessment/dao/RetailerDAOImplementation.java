@@ -7,6 +7,7 @@ import javax.persistence.PersistenceUnit;
 import javax.persistence.TypedQuery;
 import org.springframework.stereotype.Repository;
 
+import com.ustglobal.springmvcassessment.dto.OrderBean;
 import com.ustglobal.springmvcassessment.dto.ProductBean;
 import com.ustglobal.springmvcassessment.dto.RetailerBean;
 
@@ -85,7 +86,6 @@ public class RetailerDAOImplementation implements RetailerDAO{
 
 
 
-
 	@Override
 	public boolean changePassword(int id, String password) {
 		EntityManager manager = factory.createEntityManager();
@@ -100,6 +100,34 @@ public class RetailerDAOImplementation implements RetailerDAO{
 			e.printStackTrace();
 			return false;
 		}
+	}
+
+	@Override
+	public int makeOrder(OrderBean obean) {
+		
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+		ProductBean productbean;
+		try {
+			
+			manager.persist(obean);
+			transaction.commit();
+			return obean.getOid();
+		}catch (Exception e) {
+			e.printStackTrace();
+			return -1;
+		}
+	}
+
+	@Override
+	public OrderBean viewOrder(int id) {
+		
+		EntityManager manager = factory.createEntityManager();
+		EntityTransaction transaction = manager.getTransaction();
+		transaction.begin();
+
+		return manager.find(OrderBean.class, id);
 	}
 
 }

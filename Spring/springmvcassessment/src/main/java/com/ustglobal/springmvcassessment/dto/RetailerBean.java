@@ -19,8 +19,8 @@ import lombok.EqualsAndHashCode.Exclude;
 @Table(name = "retailer")
 public class RetailerBean {
 	@Id
+	/* @GeneratedValue */
 	@Column
-	@GeneratedValue
 	private int id;
 	@Column
 	private String name;
@@ -29,8 +29,9 @@ public class RetailerBean {
 	@Column
 	private String password;
 	
-	@OneToMany(mappedBy = "retailerBean")
-	private List<OrderBean> orderBean;
+	
+    
+	
 
 
 
