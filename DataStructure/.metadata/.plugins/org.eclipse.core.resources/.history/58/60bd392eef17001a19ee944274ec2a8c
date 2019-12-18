@@ -1,0 +1,45 @@
+package com.ustglobal.dsa.algo;
+
+import java.time.Duration;
+import java.time.Instant;
+
+public class AlgoAnalysis {
+	public static void main(String[] args) {
+		Long number = 999999999L;
+		/*
+		 * System.out.println(addUpTo(number));
+		 * System.out.println(addUptoQuick(number));
+		 */
+		countingDuration1();
+		countingDuration2()
+	}
+	public static Long addUpTo(Long number) {
+		long total = 0L;
+
+		for (long i = 0; i <= number; i++) {
+			total = total+i;
+		}
+		return total;
+	}
+	public static long addUptoQuick(long number) {
+		return number*(number+1)/2;
+	}
+	public static void countingDuration1() {
+	long number = 99999999999L;
+	Instant start = Instant.now();
+	System.out.println("AddUpto:"+addUpTo(number));
+	Instant end = Instant.now();
+	long duration = Duration.between(start, end).toMillis();
+	double seconds = duration / 1000.0;
+	System.out.println("addToTo time using for loop "+seconds+" seconds");
+	}
+	public static void countingDuration2() {
+		long number = 99999999999L;
+		Instant start = Instant.now();
+		System.out.println("AddUpto:"+addUptoQuick(number));
+		Instant end = Instant.now();
+		long duration = Duration.between(start, end).toMillis();
+		double seconds = duration / 1000.0;
+		System.out.println("addToTo time using for loop "+seconds+" seconds");
+		}
+}
