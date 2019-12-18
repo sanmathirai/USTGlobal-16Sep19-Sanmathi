@@ -2,8 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="F:\UST_TRAINING\hibernate\jpawithhibernateapp\src\main\java\com\ustglobal\jpawithhibernateapp\App.java"/>
-			<item value="F:\UST_TRAINING\hibernate\jpawithhibernateapp"/>
+			<item value="F:\UST_TRAINING\JAVA\hibernate\web\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -27,13 +26,25 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.ust.jj"/>
+			<item value="com.ustglobal.practicejpawithhibernate"/>
+			<item value="com.ustglobal.empapp"/>
+			<item value="com.ustglobal.jpawithhibernateapp"/>
+			<item value="com.ustglobal.web"/>
+			<item value="com.ustglobal.dd"/>
+			<item value="com.ustglobal.mm"/>
+			<item value="com.ustglobal.emp"/>
 		</list>
 		<list key="groupId">
-			<item value="com.ust"/>
+			<item value="com.ustglobal"/>
 		</list>
 		<list key="artifactId">
-			<item value="jj"/>
+			<item value="practicejpawithhibernate"/>
+			<item value="empapp"/>
+			<item value="jpawithhibernateapp"/>
+			<item value="web"/>
+			<item value="dd"/>
+			<item value="mm"/>
+			<item value="emp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -66,27 +77,15 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
-	<section name="org.eclipse.m2e.core.pom.overview">
-	</section>
-	<section name="org.eclipse.m2e.core.pom.dependencies">
-	</section>
-	<section name="MavenCheckoutLocationPage">
-		<list key="scmUrl">
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-			<item value="[name]"/>
-		</list>
-	</section>
 	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
 		<list key="catalogUrl">
-			<item value="http://repo.maven.apache.org/maven2/archetype-catalog.xml"/>
+			<item value="http://repo1.maven.org/maven2/archetype-catalog.xml"/>
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>
