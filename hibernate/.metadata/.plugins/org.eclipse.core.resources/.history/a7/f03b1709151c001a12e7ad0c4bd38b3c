@@ -1,0 +1,18 @@
+package com.ustglobal.jpawithhibernateapp.onetoone;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="traningInfo")
+public class TrainingInfo {
+	@Id
+	private int tid;
+	
+	
+
+}

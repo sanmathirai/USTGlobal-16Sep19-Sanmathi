@@ -1,0 +1,10 @@
+package com.ustglobal.jpawithhibernateapp.onetoone;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="employee_ingo")
+public class EmployeeInfo {
+
+}

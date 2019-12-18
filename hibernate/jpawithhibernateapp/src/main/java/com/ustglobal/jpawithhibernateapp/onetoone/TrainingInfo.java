@@ -1,0 +1,36 @@
+package com.ustglobal.jpawithhibernateapp.onetoone;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
+import com.ustglobal.jpawithhibernateapp.manytomany.Course;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="traningInfo")
+public class TrainingInfo {
+	@Id
+	@Column
+	private int tid;
+	@Column
+	private String trainingtype;
+	
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "emp_training" , joinColumns = @JoinColumn(name= "tid" ), 
+	inverseJoinColumns = @JoinColumn(name = "id"))
+	private List<EmployeeInfo> empinfo;
+	
+	
+	
+
+}

@@ -1,0 +1,55 @@
+package com.ustglobal.jpawithhibernateapp;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import com.ustglobal.jpawithhibernateapp.onetoone.EmployeeInfo;
+import com.ustglobal.jpawithhibernateapp.onetoone.EmployeeOtherDetails;
+import com.ustglobal.jpawithhibernateapp.onetoone.Person;
+import com.ustglobal.jpawithhibernateapp.onetoone.VoterCard;
+
+public class EmployeeOneToOne {
+	public static void main(String[] args) {
+		EmployeeInfo vc =  new EmployeeInfo();
+		vc.setId(1);
+		vc.setEmail("sanmathi@gmail");
+		vc.setName("sanmathi");
+		
+		
+		EmployeeOtherDetails eot = new EmployeeOtherDetails();
+		eot.setEid(1);
+		eot.setFname("santhosh");
+		eot.setPassword("1234");
+		eot.setEmp(vc);
+		
+		
+		EntityManager entityManager = null;
+		EntityTransaction entityTransaction = null;
+
+		try {
+
+			EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("TestPersistence");
+			entityManager = entityManagerFactory.createEntityManager();
+			entityTransaction = entityManager.getTransaction();
+			entityTransaction.begin();
+			
+			entityManager.persist(vc); 
+			entityManager.persist(p); 
+		/* VoterCard v = entityManager.find(VoterCard.class, 10); */
+			/*
+			 * System.out.println(v.getPerson().getName());
+			 * System.out.println(v.getPerson().getId());
+			 */
+			entityTransaction.commit();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			entityTransaction.rollback();
+
+		}
+		entityManager.close();
+		System.out.println("Record saved");
+	}
+}
