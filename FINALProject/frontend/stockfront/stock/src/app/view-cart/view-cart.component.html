@@ -1,0 +1,34 @@
+
+    
+    
+    <table class="table table-striped custab">
+    <thead>
+  
+        <tr>
+          
+            <th>Productid</th>
+            <th>Product Name</th>
+            <th>Company</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th class="text-center">Action</th>
+            
+        </tr>
+    </thead>
+   
+            <tr *ngFor='let product of product'>
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.company}}</td>
+                <td>{{product.quantity}}</td>
+                <td>{{product.price}}</td>
+
+                <td>
+                        <button  class="btn btn-success btn-xs "  (click)="confirm(product)" data-toggle="modal" data-target="#updateProduct"><span class="fa fa-edit"></span> Edit</button>                 
+                        <button  class="btn btn-danger btn-xs ml-2"  (click)="confirm(product)" data-toggle="modal" data-target="#deleteBook"><span class="fa fa-trash"></span> Delete </button>                 
+                        <button type="button" class="btn btn-info" data-dismiss="modal" (click)="addToCart(product)"><i class="fa fa-cart-plus">Add to cart</i></button>       
+                </td>
+            
+            </tr> 
+    </table>
+
